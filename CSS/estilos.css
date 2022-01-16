@@ -3,7 +3,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 2rem;
+  /* padding: 0.5rem 10rem; */
+  padding: 0.5rem 6rem 0.5rem 100px;
   box-shadow: 0px 3px 3px 0px gray;
   position: fixed;
   width: 100%;
@@ -11,32 +12,35 @@ header {
   z-index: 100;
 }
 .logotxt {
-  margin-left: 5.7rem;
+  /* margin-left: 10rem; */
 }
 .txt {
   /*texto del logotxt*/
   font-family: "Kanit", sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: medium;
 }
 .nav-menu {
   display: flex;
   align-items: center;
-  margin-right: 12rem;
+  margin-right: 220px;
   font-family: "Mulish", sans-serif;
   font-weight: bold;
+  font-size: 18px;
 }
-.nav-menu ul {
+.list-menu {
   display: flex;
   list-style-type: none;
   text-decoration: none;
 }
-.nav-menu li a {
-  margin-right: 3rem;
+.list-menu li {
+  margin-right: 4rem;
+}
+.list-menu a {
   text-decoration: none;
   color: black;
 }
-.nav-menu a:hover {
+.list-menu a:hover {
   color: #2937f0;
 }
 i {
@@ -44,10 +48,10 @@ i {
 }
 .btnnav {
   background-color: #2937f0;
-  padding: 10px 18px;
+  padding: 12px 18px;
   border-radius: 100px 100px;
   border: none;
-  margin-left: 20px;
+  /*   margin-left: 20px; */
 }
 
 #btnfb {
@@ -56,56 +60,61 @@ i {
 }
 
 main {
-  padding-top: 4rem;
+  padding-top: 4%;
 }
 .sec1 {
-  display: flex;
-  justify-content: space-between;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   background-color: #f8f9fa;
+  padding: 0px 0px 20px 100px;
 }
+
 .sec1 h1 {
   font-family: "Newsreader", serif;
-  font-size: 80px;
-  margin-bottom: 9px;
+  font-size: 100px;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
 }
 .sec1 p {
   font-family: "Mulish", sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   color: #6c757d;
 }
 .cont1 {
-  padding: 0rem 5rem 0rem 7.5rem;
-  width: 38%;
+  width: 100%;
+  height: 100%;
+  /* width: 49%; */
 }
 
 .celular {
   position: relative;
-  width: 55%;
-  height: 70vh;
+  width: 100%;
+  height: 100%;
   /* border: solid; */
-  padding-bottom: 3rem;
+  /* padding-bottom: 3rem; */
 }
 
 .cel1 {
   position: absolute;
   z-index: 3;
-  width: 250px;
-  height: 500px;
-  top: 3%;
-  left: 23%;
+  width: 300px;
+  height: 570px;
+  top: 40px;
+  left: 150px;
 }
 
 .circulo {
   position: absolute;
   z-index: 1;
-  width: 400px;
-  height: 400px;
+  width: 450px;
+  height: 450px;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   background: #5cb85c;
-  left: 6.5rem;
-  top: 14%;
+  left: 70px;
+  top: 100px;
   background-image: linear-gradient(
     90deg,
     rgba(78, 38, 231, 1) 0%,
@@ -116,21 +125,23 @@ main {
 .ondas {
   position: absolute;
   z-index: 2;
-  width: 255px;
-  height: 473px;
-  left: 11.1rem;
-  top: 6%;
+  width: 300px;
+  height: 562px;
+  top: 45px;
+  left: 150px;
+  border-radius: 50px;
 }
 
 .bola {
-  width: 12px;
-  position: absolute;
-  top: 16%;
-  left: 65%;
-}
-.x {
   width: 15px;
   position: absolute;
-  top: 78%;
-  left: 12%;
+  top: 120px;
+  left: 510px;
+}
+.x {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 500px;
+  left: 70px;
 }
