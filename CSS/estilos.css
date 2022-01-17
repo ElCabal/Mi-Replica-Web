@@ -1,12 +1,31 @@
 html {
   scroll-behavior: smooth;
 }
+.scroll-inicio {
+  background-color: #2937f0;
+  width: 48px;
+  height: 45px;
+  top: 650px;
+  left: 1440px;
+  border-radius: 10px;
+  position: absolute;
+  position: fixed;
+  z-index: 50;
+  text-align: center;
+}
+.arrow {
+  line-height: 50px;
+  width: 100px;
+  font-size: 2rem;
+}
+
+/* HEADER */
+
 header {
   background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 0.5rem 10rem; */
   padding: 0.5rem 6rem 0.5rem 100px;
   box-shadow: 0px 3px 3px 0px gray;
   position: fixed;
@@ -14,15 +33,17 @@ header {
   top: 0%;
   z-index: 100;
 }
+
+/* LOGO */
+
 .logotxt {
-  /* margin-left: 10rem; */
-}
-.txt {
-  /*texto del logotxt*/
   font-family: "Kanit", sans-serif;
   font-size: 22px;
   font-weight: medium;
 }
+
+/* NAVBAR */
+
 .nav-menu {
   display: flex;
   align-items: center;
@@ -54,7 +75,6 @@ i {
   padding: 12px 18px;
   border-radius: 100px 100px;
   border: none;
-  /*   margin-left: 20px; */
 }
 
 #btnfb {
@@ -63,9 +83,12 @@ i {
 }
 
 main {
-  padding-right: 0px;
+  position: relative;
 }
-.sec1 {
+
+/* INICIO*/
+
+.container-inicio {
   height: 92vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -74,34 +97,29 @@ main {
   right: 0;
 }
 
-.sec1 h1 {
+.container-inicio h1 {
   font-family: "Newsreader", serif;
   font-size: 100px;
   margin-top: 5rem;
   margin-bottom: 1rem;
 }
-.sec1 p {
+.container-inicio p {
   font-family: "Mulish", sans-serif;
   font-size: 22px;
   color: #6c757d;
 }
-.cont1 {
+.articulo-inicio {
   width: 100%;
   height: 100%;
-  /* width: 49%; */
-  border: solid;
 }
 
-.celular {
+.figuras-inicio {
   position: relative;
   width: 100%;
   height: 100%;
-  border: solid;
-  /* border: solid; */
-  /* padding-bottom: 3rem; */
 }
 
-.cel1 {
+.phone {
   position: absolute;
   z-index: 3;
   width: 300px;
@@ -128,7 +146,7 @@ main {
   );
 }
 
-.ondas {
+.ondas-inicio {
   position: absolute;
   z-index: 2;
   width: 300px;
@@ -138,13 +156,13 @@ main {
   border-radius: 50px;
 }
 
-.bola {
+.bola-inicio {
   width: 15px;
   position: absolute;
   top: 120px;
   left: 510px;
 }
-.x {
+.x-inicio {
   width: 20px;
   height: 20px;
   position: absolute;
@@ -152,19 +170,17 @@ main {
   left: 70px;
 }
 
-.container_notas {
-  /*   box-shadow: 0px -1px 10px 2px black; */
-  background-image: url(/img/manopad.jpg);
-  background-color: rgba(50, 50, 50, 50);
-  background-blend-mode: soft-light;
-  /*  width: 100%; */
+/* NOTAS */
 
+.container_notas {
+  background: linear-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0.7)),
+    url(/img/manopad.jpg);
   height: 90vh;
   background-size: cover;
   padding: 100px 0px 20px 100px;
 }
 
-.enunciado-notas h2 {
+.articulo-notas h2 {
   color: white;
   font-family: "Newsreader", serif;
   font-size: 100px;
@@ -186,6 +202,8 @@ main {
   color: white;
 }
 
+/* APRENDIZAJE */
+
 .container-aprendizaje {
   display: grid;
   height: 100vh;
@@ -194,15 +212,12 @@ main {
 
 .figuras-aprendizaje {
   position: relative;
-  width: 11|0%;
+  width: 110%;
   height: 100%;
-  /*   background-color: coral;
- */
   align-items: center;
 }
 
-.cel2 {
-  /*   top:400px */
+.phone-aprendizaje {
   margin: 120px 100px 100px 190px;
   position: absolute;
   z-index: 3;
@@ -212,22 +227,12 @@ main {
 .conjuntos-aprendizaje {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /*   background-color: crimson;
- */
   width: 100%;
   height: 100%;
   align-items: center;
 }
 
-.icon-aprendizaje {
-  font-size: 5rem;
-  background: linear-gradient(#640589, #4200ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .conjuntos-aprendizaje div {
-  border: solid;
   align-items: center;
   text-align: center;
   padding-right: 100px;
@@ -242,8 +247,22 @@ main {
 
 .conjuntos-aprendizaje div p {
   font-family: "Mulish", sans-serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-top: 5px;
+  color: #808080;
+  font-weight: bold;
+}
+
+.icon-aprendizaje {
+  font-size: 5rem;
+  background: linear-gradient(#640589, #4200ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.arreglos {
+  padding-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .ondas-aprendizaje {
@@ -287,13 +306,16 @@ main {
   left: 550px;
 }
 
+/* FOOTER */
+
 footer {
   background-color: black;
-  height: 20vh;
+  height: 15vh;
   font-family: "Mulish", sans-serif;
-  color: #6c757d;
+  color: #808080;
   text-align: center;
   align-items: center;
   font-size: 1rem;
   padding-top: 65px;
+  font-weight: bold;
 }
