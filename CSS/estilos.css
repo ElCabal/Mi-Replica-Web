@@ -174,7 +174,7 @@ main {
 
 .container_notas {
   background: linear-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0.7)),
-    url(/img/manopad.jpg);
+    url(../img/manopad.jpg);
   height: 90vh;
   background-size: cover;
   padding: 100px 0px 20px 100px;
