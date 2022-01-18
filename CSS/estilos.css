@@ -82,9 +82,9 @@ i {
   color: white;
 }
 
-main {
+/* main {
   position: relative;
-}
+} */
 
 /* INICIO*/
 
@@ -93,8 +93,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #f8f9fa;
-  padding: 70px 0px 1px 100px;
-  right: 0;
+  padding: 70px 0px 100px 100px;
 }
 
 .container-inicio h1 {
@@ -208,6 +207,7 @@ main {
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 2fr;
+  width: 100%;
 }
 
 .figuras-aprendizaje {
@@ -229,25 +229,22 @@ main {
   grid-template-columns: 1fr 1fr;
   width: 100%;
   height: 100%;
-  align-items: center;
 }
 
 .conjuntos-aprendizaje div {
-  align-items: center;
   text-align: center;
-  padding-right: 100px;
   margin-top: 90px;
 }
 
 .conjuntos-aprendizaje div h3 {
   font-family: "Kanit", sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 0px;
 }
 
 .conjuntos-aprendizaje div p {
   font-family: "Mulish", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-top: 5px;
   color: #808080;
   font-weight: bold;
@@ -258,11 +255,6 @@ main {
   background: linear-gradient(#640589, #4200ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.arreglos {
-  padding-bottom: 20px;
-  margin-bottom: 10px;
 }
 
 .ondas-aprendizaje {
@@ -310,7 +302,7 @@ main {
 
 footer {
   background-color: black;
-  height: 15vh;
+  height: 100px;
   font-family: "Mulish", sans-serif;
   color: #808080;
   text-align: center;
@@ -318,4 +310,5 @@ footer {
   font-size: 1rem;
   padding-top: 65px;
   font-weight: bold;
+  margin-top: 100px;
 }
